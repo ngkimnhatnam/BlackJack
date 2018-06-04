@@ -35,8 +35,7 @@ public class BlackJack {
                         Player player= new Player(reader.nextLine());
                         player.addName(nimi);
                         list.addPlayer(player);
-                        m=list.returnPlayerList().indexOf(player);
-                        //System.out.println("");                
+                        m=list.returnPlayerList().indexOf(player);                                      
                         play.startGame(player);
                         play.playAgain(list.returnPlayerList().get(m));
                         }   
@@ -50,7 +49,6 @@ public class BlackJack {
                         }
                         else if (!nimi.equals(playerinsearch.getName())) {//Non-existing player will be created
                         Player anotherplayer= new Player(nimi);
-                        //anotherplayer.addName(nimi);
                         list.addPlayer(anotherplayer);
                         o=list.returnPlayerList().indexOf(anotherplayer);
                         System.out.println("");
